@@ -1,0 +1,141 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "FichasAmarillas",
+"language": "GDScript",
+"path": "res://Fichas/Scripts/FichasAmarillas.gd"
+}, {
+"base": "Node2D",
+"class": "FichasAmarillas6J",
+"language": "GDScript",
+"path": "res://Fichas/6 Jugadores/Scripts/FichasAmarillas6J.gd"
+}, {
+"base": "Node2D",
+"class": "FichasAzules",
+"language": "GDScript",
+"path": "res://Fichas/Scripts/FichasAzules.gd"
+}, {
+"base": "Node2D",
+"class": "FichasAzules6J",
+"language": "GDScript",
+"path": "res://Fichas/6 Jugadores/Scripts/FichasAzules6J.gd"
+}, {
+"base": "Node2D",
+"class": "FichasGeneral",
+"language": "GDScript",
+"path": "res://FIchasGeneral.gd"
+}, {
+"base": "Node2D",
+"class": "FichasMoradas6J",
+"language": "GDScript",
+"path": "res://Fichas/6 Jugadores/Scripts/FichasMoradas6J.gd"
+}, {
+"base": "Node2D",
+"class": "FichasNaranjas6J",
+"language": "GDScript",
+"path": "res://Fichas/6 Jugadores/Scripts/FichasNaranjas6J.gd"
+}, {
+"base": "Node2D",
+"class": "FichasRojas",
+"language": "GDScript",
+"path": "res://Fichas/Scripts/FichasRojas.gd"
+}, {
+"base": "Node2D",
+"class": "FichasRojas6J",
+"language": "GDScript",
+"path": "res://Fichas/6 Jugadores/Scripts/FichasRojas6J.gd"
+}, {
+"base": "Node2D",
+"class": "FichasVerdes",
+"language": "GDScript",
+"path": "res://Fichas/Scripts/FichasVerdes.gd"
+}, {
+"base": "Node2D",
+"class": "FichasVerdes6J",
+"language": "GDScript",
+"path": "res://Fichas/6 Jugadores/Scripts/FichasVerdes6J.gd"
+}, {
+"base": "",
+"class": "GitAPI",
+"language": "NativeScript",
+"path": "res://addons/godot-git-plugin/git_api.gdns"
+}, {
+"base": "Node2D",
+"class": "Turnos",
+"language": "GDScript",
+"path": "res://Scripts/Fichas.gd"
+}, {
+"base": "Node2D",
+"class": "Turnos6J",
+"language": "GDScript",
+"path": "res://Fichas/6 Jugadores/Scripts/Fichas6Jugadores.gd"
+} ]
+_global_script_class_icons={
+"FichasAmarillas": "",
+"FichasAmarillas6J": "",
+"FichasAzules": "",
+"FichasAzules6J": "",
+"FichasGeneral": "",
+"FichasMoradas6J": "",
+"FichasNaranjas6J": "",
+"FichasRojas": "",
+"FichasRojas6J": "",
+"FichasVerdes": "",
+"FichasVerdes6J": "",
+"GitAPI": "",
+"Turnos": "",
+"Turnos6J": ""
+}
+
+[application]
+
+config/name="Parchis 2"
+run/main_scene="res://Scenes/Menu.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Variablesjuego="*res://Scripts/Variablesjuego.gd"
+
+[display]
+
+window/size/width=700
+window/size/height=750
+window/size/resizable=false
+
+[global]
+
+layer=false
+
+[input]
+
+mouse_click={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[layer_names]
+
+2d_physics/layer_1="FichaVerde"
+2d_physics/layer_2="FichaAmarilla"
+2d_physics/layer_3="FichaAzul"
+2d_physics/layer_4="FichaRoja"
+2d_physics/layer_5="Waypoints"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

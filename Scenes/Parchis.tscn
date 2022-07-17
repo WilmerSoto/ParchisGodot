@@ -1,0 +1,385 @@
+[gd_scene load_steps=68 format=2]
+
+[ext_resource path="res://Fichas/Scenes/FichasAzules.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Fichas/Scenes/FichasRojas.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Fichas/Scenes/FichasVerdes.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fichas/Scenes/FichasAmarillas.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Fichas.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/MouseClick.gd" type="Script" id=6]
+[ext_resource path="res://Dados/img/dice0039.png" type="Texture" id=7]
+[ext_resource path="res://Dados/Scripts/Dado.gd" type="Script" id=8]
+[ext_resource path="res://Dados/img/dice0038.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/Parchis.gd" type="Script" id=10]
+[ext_resource path="res://Dados/img/dice0040.png" type="Texture" id=11]
+[ext_resource path="res://Dados/Scripts/DadoBoton.gd" type="Script" id=12]
+[ext_resource path="res://Dados/img/dice0036.png" type="Texture" id=13]
+[ext_resource path="res://Dados/img/dice0037.png" type="Texture" id=14]
+[ext_resource path="res://mapa parchis.png" type="Texture" id=15]
+[ext_resource path="res://Dados/img/dice0001.png" type="Texture" id=16]
+[ext_resource path="res://Dados/img/dice0033.png" type="Texture" id=17]
+[ext_resource path="res://Dados/img/dice0034.png" type="Texture" id=18]
+[ext_resource path="res://Dados/img/dice0035.png" type="Texture" id=20]
+[ext_resource path="res://Dados/img/dice0023.png" type="Texture" id=21]
+[ext_resource path="res://Dados/img/dice0022.png" type="Texture" id=22]
+[ext_resource path="res://Dados/img/dice0030.png" type="Texture" id=23]
+[ext_resource path="res://Dados/img/dice0031.png" type="Texture" id=24]
+[ext_resource path="res://Dados/img/dice0021.png" type="Texture" id=25]
+[ext_resource path="res://Dados/img/dice0020.png" type="Texture" id=26]
+[ext_resource path="res://Dados/img/dice0019.png" type="Texture" id=27]
+[ext_resource path="res://Dados/img/dice0024.png" type="Texture" id=28]
+[ext_resource path="res://Dados/img/dice0025.png" type="Texture" id=29]
+[ext_resource path="res://Dados/img/dice0026.png" type="Texture" id=30]
+[ext_resource path="res://Dados/img/dice00028.png" type="Texture" id=31]
+[ext_resource path="res://Dados/img/dice0029.png" type="Texture" id=32]
+[ext_resource path="res://Dados/img/dice0032.png" type="Texture" id=33]
+[ext_resource path="res://Dados/img/dice0027.png" type="Texture" id=34]
+[ext_resource path="res://Dados/img/dice0015.png" type="Texture" id=35]
+[ext_resource path="res://Dados/img/dice0016.png" type="Texture" id=36]
+[ext_resource path="res://Dados/img/dice0017.png" type="Texture" id=37]
+[ext_resource path="res://Dados/img/dice0004.png" type="Texture" id=38]
+[ext_resource path="res://Dados/img/dice0003.png" type="Texture" id=39]
+[ext_resource path="res://Dados/img/dice0007.png" type="Texture" id=40]
+[ext_resource path="res://Dados/img/dice0009.png" type="Texture" id=41]
+[ext_resource path="res://Dados/img/dice0012.png" type="Texture" id=42]
+[ext_resource path="res://Dados/img/dice0018.png" type="Texture" id=43]
+[ext_resource path="res://Dados/img/dice0006.png" type="Texture" id=44]
+[ext_resource path="res://Dados/img/dice0002.png" type="Texture" id=45]
+[ext_resource path="res://Dados/img/dice0008.png" type="Texture" id=46]
+[ext_resource path="res://Dados/img/dice0013.png" type="Texture" id=47]
+[ext_resource path="res://Dados/img/dice0014.png" type="Texture" id=48]
+[ext_resource path="res://Dados/img/dice0011.png" type="Texture" id=49]
+[ext_resource path="res://Dados/img/dice0005.png" type="Texture" id=50]
+[ext_resource path="res://Dados/img/dice0010.png" type="Texture" id=51]
+[ext_resource path="res://Dados/results/1.png" type="Texture" id=52]
+[ext_resource path="res://Dados/results/6.png" type="Texture" id=53]
+[ext_resource path="res://Dados/results/2.png" type="Texture" id=54]
+[ext_resource path="res://Dados/results/3.png" type="Texture" id=55]
+[ext_resource path="res://Dados/results/4.png" type="Texture" id=56]
+[ext_resource path="res://Dados/results/5.png" type="Texture" id=57]
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 5.0
+
+[sub_resource type="Theme" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 52 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 53 ) ],
+"loop": true,
+"name": "Dado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 45 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 50 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 46 ), ExtResource( 41 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 42 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 43 ), ExtResource( 27 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 34 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 33 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "DadoRoll",
+"speed": 5.0
+} ]
+
+[sub_resource type="Curve2D" id=6]
+_data = {
+"points": PoolVector2Array( 0, 0, 80.2205, -0.356696, 123, 375, 0.202134, -78.8823, 1.24645, 91.4386, 227, 480, -84.0402, -2.11181, 84.5945, 0.419691, 299, 588, -0.547246, 92.3039, 0, -83.2276, 374, 479, -78.1795, 1.5874, 93.2063, -0.540154, 479, 378, 0.222048, 84.937, -1.5, -88.5, 588, 301, 94.6189, 2.437, -81.9039, 0.0157489, 478, 226, -0.634647, 82.0646, 7.5, -93.5, 374, 122, 81.4135, 0.88651, -86.4289, -0.339264, 300, 12, 0, -94.4941, -2.62591, 85.7514, 226, 123, 77.3858, -1.19055, -95.2441, 0.7937, 122, 226, 1.98425, -79.37, 2.37423, 0.409348, 11, 301, 0, 0, 0, 0, 226, 301 )
+}
+
+[sub_resource type="Curve2D" id=7]
+_data = {
+"points": PoolVector2Array( 0, 0, -1.28494, 84.4264, 226, 123, 92.3849, -0.0664787, -94.2877, 0.482612, 122, 226, 0.11799, -71.3968, 0.227349, 77.5363, 11, 301, -91.7498, -3.64245, 79.8123, 0, 123, 375, 1.98425, -90.8787, 0, 95.4417, 227, 480, -73.158, -1.26134, 79.8852, -0.420448, 299, 588, 1.26134, 92.4986, 1.16695, -83.3903, 374, 478, -93.6567, -0.7937, 89.6882, 1.5874, 479, 378, -0.39685, 77.7826, -0.7937, -69.4488, 588, 302, 93.2598, 0.7937, -78.5763, 1.19055, 478, 226, 0, 92.0693, 1.19055, -94.0535, 374, 122, 74.6078, 1.19055, 0.396851, 0, 300, 12, 0, 0, 0, 0, 299, 224 )
+}
+
+[sub_resource type="Curve2D" id=8]
+_data = {
+"points": PoolVector2Array( 0, 0, -79.37, 0.7937, 478, 225, 1.5874, 81.3543, 0.7937, -94.0535, 374, 121, 73.0204, 0, -73.4173, 1.19055, 300, 11, 1.98425, -94.8472, 2.3811, 80.9574, 226, 122, 78.9732, 0.7937, -93.6567, 0, 122, 225, 0, -89.6881, -1.19055, 86.1165, 11, 300, -93.2598, -0.39685, 85.3228, -1.19055, 123, 374, -0.7937, -76.1952, 1.5874, 94.0535, 227, 479, -78.5327, -0.92703, 81.9944, -0.743177, 299, 587, 0, 90.3964, -2.3811, -83.3385, 374, 478, -77.7829, -2.10224, 95.0213, 0, 479, 377, -0.420448, 82.8283, 0.840896, 0.840897, 588, 300, 0, 0, 0, 0, 371, 301 )
+}
+
+[sub_resource type="Curve2D" id=9]
+_data = {
+"points": PoolVector2Array( 0, 0, -0.840896, -83.6692, 374, 478, -81.9874, -1.26134, 94.6008, 0, 479, 377, 0.420448, 76.1011, -0.420448, -75.6807, 588, 300, 94.1804, 0, -79.0443, 0, 478, 225, 0, 77.7829, 0.420448, -93.7599, 374, 121, 84.0896, 0.840896, -79.0443, 1.26134, 300, 11, 0.420448, -95.0213, 0, 81.1465, 226, 122, 79.0443, -0.420448, -93.7599, 0.840896, 122, 225, 1.26134, -78.2034, 0, 78.6238, 11, 300, -93.3395, -0.840896, 79.8852, -0.420448, 123, 374, 0, -78.6238, 1.68179, 94.1804, 227, 479, -81.567, -0.840896, 0.420448, -0.420448, 299, 587, 0, 0, 0, 0, 298, 373 )
+}
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 13.5, 36.5 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 36.5, 13 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 13, 36.5 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 36.5, 13 )
+
+[node name="Main" type="Node2D"]
+scale = Vector2( 1.16637, 1.16578 )
+script = ExtResource( 10 )
+
+[node name="MapaParchis" type="Sprite" parent="."]
+position = Vector2( 300, 300 )
+texture = ExtResource( 15 )
+
+[node name="MouseClick" type="Area2D" parent="."]
+position = Vector2( 300, 330 )
+collision_layer = 0
+collision_mask = 15
+monitorable = false
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MouseClick"]
+shape = SubResource( 4 )
+
+[node name="DadoBoton" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.539
+anchor_right = 0.5
+anchor_bottom = 0.539
+margin_left = 259.0
+margin_top = 277.0
+margin_right = 336.0
+margin_bottom = 319.0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+action_mode = 0
+script = ExtResource( 12 )
+
+[node name="Dado2" type="AnimatedSprite" parent="DadoBoton"]
+position = Vector2( 63, 19 )
+scale = Vector2( 0.12, 0.12 )
+frames = SubResource( 1 )
+animation = "Dado"
+speed_scale = 10.0
+script = ExtResource( 8 )
+
+[node name="Dado" type="AnimatedSprite" parent="DadoBoton"]
+position = Vector2( 19, 19 )
+scale = Vector2( 0.12, 0.12 )
+frames = SubResource( 1 )
+animation = "Dado"
+speed_scale = 10.0
+script = ExtResource( 8 )
+
+[node name="Fichas" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="FichasVerdes" parent="Fichas" instance=ExtResource( 3 )]
+
+[node name="FichasRojas" parent="Fichas" instance=ExtResource( 2 )]
+
+[node name="FichasAzules" parent="Fichas" instance=ExtResource( 1 )]
+
+[node name="FichasAmarillas" parent="Fichas" instance=ExtResource( 4 )]
+
+[node name="PosIniciales" type="Node2D" parent="."]
+
+[node name="Verde" type="Node2D" parent="PosIniciales"]
+
+[node name="InicialVerde" type="Position2D" parent="PosIniciales/Verde"]
+position = Vector2( 48, 456 )
+
+[node name="InicialVerde2" type="Position2D" parent="PosIniciales/Verde"]
+position = Vector2( 144, 456 )
+
+[node name="InicialVerde3" type="Position2D" parent="PosIniciales/Verde"]
+position = Vector2( 48, 552 )
+
+[node name="InicialVerde4" type="Position2D" parent="PosIniciales/Verde"]
+position = Vector2( 144, 552 )
+
+[node name="Rojo" type="Node2D" parent="PosIniciales"]
+
+[node name="InicialRojo" type="Position2D" parent="PosIniciales/Rojo"]
+position = Vector2( 49, 45 )
+
+[node name="InicialRojo2" type="Position2D" parent="PosIniciales/Rojo"]
+position = Vector2( 147, 46 )
+
+[node name="InicialRojo3" type="Position2D" parent="PosIniciales/Rojo"]
+position = Vector2( 49, 144 )
+
+[node name="InicialRojo4" type="Position2D" parent="PosIniciales/Rojo"]
+position = Vector2( 147, 143 )
+
+[node name="Azul" type="Node2D" parent="PosIniciales"]
+
+[node name="InicialAzul" type="Position2D" parent="PosIniciales/Azul"]
+position = Vector2( 457, 46 )
+
+[node name="InicialAzul2" type="Position2D" parent="PosIniciales/Azul"]
+position = Vector2( 555, 46 )
+
+[node name="InicialAzul3" type="Position2D" parent="PosIniciales/Azul"]
+position = Vector2( 457, 143 )
+
+[node name="InicialAzul4" type="Position2D" parent="PosIniciales/Azul"]
+position = Vector2( 555, 143 )
+
+[node name="Amarillo" type="Node2D" parent="PosIniciales"]
+
+[node name="InicialAmarillo" type="Position2D" parent="PosIniciales/Amarillo"]
+position = Vector2( 457, 456 )
+
+[node name="InicialAmarillo2" type="Position2D" parent="PosIniciales/Amarillo"]
+position = Vector2( 555, 456 )
+
+[node name="InicialAmarillo3" type="Position2D" parent="PosIniciales/Amarillo"]
+position = Vector2( 457, 552 )
+
+[node name="InicialAmarillo4" type="Position2D" parent="PosIniciales/Amarillo"]
+position = Vector2( 555, 552 )
+
+[node name="Movimientos" type="Node2D" parent="."]
+
+[node name="MovimientosVerde" type="Path2D" parent="Movimientos"]
+visible = false
+curve = SubResource( 6 )
+
+[node name="MovimientosRojo" type="Path2D" parent="Movimientos"]
+visible = false
+curve = SubResource( 7 )
+
+[node name="MovimientosAzul" type="Path2D" parent="Movimientos"]
+visible = false
+position = Vector2( 0, 1 )
+curve = SubResource( 8 )
+
+[node name="MovimientosAmarillo" type="Path2D" parent="Movimientos"]
+visible = false
+position = Vector2( 0, 1 )
+curve = SubResource( 9 )
+
+[node name="SalidaVerde" type="Node2D" parent="Movimientos"]
+
+[node name="PosSalidaVerde" type="Position2D" parent="Movimientos/SalidaVerde"]
+position = Vector2( 121, 346 )
+
+[node name="PosSalidaVerde2" type="Position2D" parent="Movimientos/SalidaVerde"]
+position = Vector2( 121, 364 )
+
+[node name="PosSalidaVerde3" type="Position2D" parent="Movimientos/SalidaVerde"]
+position = Vector2( 121, 382 )
+
+[node name="PosSalidaVerde4" type="Position2D" parent="Movimientos/SalidaVerde"]
+position = Vector2( 121, 400 )
+
+[node name="SalidaRojo" type="Node2D" parent="Movimientos"]
+
+[node name="PosSalidaRojo" type="Position2D" parent="Movimientos/SalidaRojo"]
+position = Vector2( 199, 122 )
+
+[node name="PosSalidaRojo2" type="Position2D" parent="Movimientos/SalidaRojo"]
+position = Vector2( 217, 122 )
+
+[node name="PosSalidaRojo3" type="Position2D" parent="Movimientos/SalidaRojo"]
+position = Vector2( 235, 122 )
+
+[node name="PosSalidaRojo4" type="Position2D" parent="Movimientos/SalidaRojo"]
+position = Vector2( 254, 122 )
+
+[node name="SalidaAzul" type="Node2D" parent="Movimientos"]
+
+[node name="PosSalidaAzul" type="Position2D" parent="Movimientos/SalidaAzul"]
+position = Vector2( 478, 200 )
+
+[node name="PosSalidaAzul2" type="Position2D" parent="Movimientos/SalidaAzul"]
+position = Vector2( 478, 217 )
+
+[node name="PosSalidaAzul3" type="Position2D" parent="Movimientos/SalidaAzul"]
+position = Vector2( 478, 235 )
+
+[node name="PosSalidaAzul4" type="Position2D" parent="Movimientos/SalidaAzul"]
+position = Vector2( 478, 253 )
+
+[node name="SalidaAmarillo" type="Node2D" parent="Movimientos"]
+
+[node name="PosSalidaAmarillo" type="Position2D" parent="Movimientos/SalidaAmarillo"]
+position = Vector2( 347, 478 )
+
+[node name="PosSalidaAmarillo2" type="Position2D" parent="Movimientos/SalidaAmarillo"]
+position = Vector2( 364, 478 )
+
+[node name="PosSalidaAmarillo3" type="Position2D" parent="Movimientos/SalidaAmarillo"]
+position = Vector2( 383, 478 )
+
+[node name="PosSalidaAmarillo4" type="Position2D" parent="Movimientos/SalidaAmarillo"]
+position = Vector2( 400, 478 )
+
+[node name="SalidaVerdeArea2D" type="Area2D" parent="Movimientos"]
+position = Vector2( 121, 374 )
+collision_layer = 0
+collision_mask = 15
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Movimientos/SalidaVerdeArea2D"]
+position = Vector2( 1.5, 0 )
+shape = SubResource( 5 )
+
+[node name="SalidaRojoArea2D" type="Area2D" parent="Movimientos"]
+position = Vector2( 226, 122 )
+collision_layer = 0
+collision_mask = 15
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Movimientos/SalidaRojoArea2D"]
+position = Vector2( 0.5, 0 )
+shape = SubResource( 10 )
+
+[node name="SalidaAzulArea2D" type="Area2D" parent="Movimientos"]
+position = Vector2( 478, 228 )
+collision_layer = 0
+collision_mask = 15
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Movimientos/SalidaAzulArea2D"]
+position = Vector2( 0, -1.5 )
+shape = SubResource( 11 )
+
+[node name="SalidaAmarilloArea2D" type="Area2D" parent="Movimientos"]
+position = Vector2( 373, 478 )
+collision_layer = 0
+collision_mask = 15
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Movimientos/SalidaAmarilloArea2D"]
+position = Vector2( 0.5, 0 )
+shape = SubResource( 12 )
+
+[node name="InterfazTurno" type="Control" parent="."]
+margin_left = 95.0
+margin_top = 600.0
+margin_right = 505.0
+margin_bottom = 650.0
+
+[node name="Contenedor" type="VBoxContainer" parent="InterfazTurno"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -205.5
+margin_top = -24.5
+margin_right = 205.5
+margin_bottom = 24.5
+
+[node name="TxtTurno" type="RichTextLabel" parent="InterfazTurno/Contenedor"]
+margin_right = 411.0
+margin_bottom = 15.0
+bbcode_enabled = true
+bbcode_text = "[center]Turno actual[/center]"
+text = "Turno actual"
+fit_content_height = true
+
+[node name="ColorTurno" type="ColorRect" parent="InterfazTurno"]
+margin_top = 20.0
+margin_right = 411.0
+margin_bottom = 43.0
+color = Color( 0.192157, 0.678431, 0.121569, 1 )
+
+[connection signal="area_entered" from="MouseClick" to="MouseClick" method="_on_MouseClick_area_entered"]
+[connection signal="pressed" from="DadoBoton" to="DadoBoton/Dado" method="_on_DadoBoton_pressed"]
+[connection signal="animation_finished" from="DadoBoton/Dado" to="DadoBoton/Dado" method="_on_Dado_animation_finished"]
+[connection signal="resultado_dado" from="DadoBoton/Dado" to="Fichas" method="_on_Dado_resultado_dado"]
+[connection signal="area_entered" from="Movimientos/SalidaVerdeArea2D" to="Fichas" method="_on_SalidaVerde_area_entered"]
+[connection signal="area_exited" from="Movimientos/SalidaVerdeArea2D" to="Fichas" method="_on_SalidaVerde_area_exited"]
+[connection signal="area_entered" from="Movimientos/SalidaRojoArea2D" to="Fichas" method="_on_SalidaRojo_area_entered"]
+[connection signal="area_exited" from="Movimientos/SalidaRojoArea2D" to="Fichas" method="_on_SalidaRojo_area_exited"]
+[connection signal="area_entered" from="Movimientos/SalidaAzulArea2D" to="Fichas" method="_on_SalidaAzul_area_entered"]
+[connection signal="area_exited" from="Movimientos/SalidaAzulArea2D" to="Fichas" method="_on_SalidaAzul_area_exited"]
+[connection signal="area_entered" from="Movimientos/SalidaAmarilloArea2D" to="Fichas" method="_on_SalidaAmarillo_area_entered"]
+[connection signal="area_exited" from="Movimientos/SalidaAmarilloArea2D" to="Fichas" method="_on_SalidaAmarillo_area_exited"]
